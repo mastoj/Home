@@ -1323,6 +1323,7 @@ function dnvm-setup {
         $userHomeVal = Change-Path $userHomeVal "%USERPROFILE%\$DefaultUserDirectoryName" $PathsToRemove
         [Environment]::SetEnvironmentVariable($HomeEnvVar, $userHomeVal, "User")
     }
+    _WriteOut "Setup done"
 }
 
 ### The main "entry point"
